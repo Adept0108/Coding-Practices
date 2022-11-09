@@ -1,0 +1,18 @@
+int i,j;
+   double num,num1=1;
+   double result = 1;
+   int sign=1 ;
+   int zzz=1;
+
+
+   printf("Enter a number:\n");
+   scanf("%lf",&num);
+   for ( i = 1 ; i <= 20 ; i++){
+       sign = - sign ;
+       num1*= num ;
+       zzz *=i;
+       result += sign*(num1/zzz);
+
+   }
+   printf("Result = %.2lf\n",result);
+
