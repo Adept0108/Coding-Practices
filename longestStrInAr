@@ -1,0 +1,8 @@
+int i , j ; 
+*length=0;
+for ( i = 0 ; i < size ; i++){
+    if (strlen(str[i])>*length) 
+      {*length =strlen(str[i]);
+      j = i ; }
+}
+return str[j];
