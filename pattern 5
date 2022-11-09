@@ -1,0 +1,18 @@
+ int num,j,i,k,blanks;
+   printf("Enter the height:\n");
+   scanf("%d",&num);
+   printf("The pattern is:\n");
+  
+   for ( i = 0 ; i <  num ; i ++){
+       for ( blanks = 0 ; blanks < num - i ; blanks ++ ) printf(" ");
+        
+        if ( i%2 == 0) printf("+");
+        
+        for (k= 0 ; k < i ; k ++) printf("=+");
+        
+        if (i%2==1) printf("=");
+        
+         printf("\n");   
+        }
+    
+       
