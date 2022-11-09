@@ -1,0 +1,33 @@
+int i = 0 ; 
+int j,count =0;
+int vowelIndex=0;
+char woord[10]={};
+char newWord[10]={};
+char twoletter[10]="ay";
+
+for ( i = 0 ; i < strlen(eword); i ++ )
+{
+
+    count++;
+    
+    if ((*(eword+i)=='a')||(*(eword+i)=='e')||(*(eword+i)=='o')||(*(eword+i)=='u')||(*(eword+i)=='i')||(*(eword+i)=='y')) {
+      vowelIndex=count;
+      
+      break;}
+}
+
+
+for ( j = 0 ; j < vowelIndex-1 ; j ++ ) *(woord+j)=*(eword+j);
+
+
+i=0;
+for ( j = vowelIndex-1 ; j < strlen(eword) ; j ++ ) {
+ 
+*(newWord+i)=* (eword+j) ;
+    i++;
+}
+
+
+strcat(newWord,woord);
+strcat(newWord,twoletter);
+strcpy(PLword,newWord);
